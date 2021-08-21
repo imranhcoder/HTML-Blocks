@@ -1,0 +1,64 @@
+@media only screen { 
+
+} /* Define mobile styles */
+
+@media (max-width: 992px) { 
+    .full-width-img-content {
+        padding-left:30px;
+    }
+    
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+/* Medium screens */
+
+@media only screen and (max-width: 768px) { 
+    .full-width-image {
+        width: 100%;
+        z-index: -1;
+    }
+    .full-width-image:after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: #333;
+        opacity: .5;
+        z-index: -1;
+    }
+    .full-width-img-content{
+        margin: 0;
+        color:#fff;
+    }
+
+
+
+    .res-separate-bg .full-width-image{
+        height: 350px;
+        position: relative;
+    }
+    .res-separate-bg .full-width-image:after{
+        display: none;
+    }
+    .res-separate-bg  .full-width-img-content{
+        color:#333;
+    }
+ } /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+
+ } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+/* XLarge screens */
+
+@media only screen and (min-width: 90.063em) { 
+
+} /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {
+
+ } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+/* XXLarge screens */
+
+@media only screen and (min-width: 120.063em) { 
+
+} /* min-width 1921px, xxlarge screens */
